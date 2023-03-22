@@ -6,7 +6,7 @@ interface Params {
   data?: any;
 }
 
-const baseUrl = 'http://127.0.0.1:5000/'
+const baseUrl = import.meta.env.VITE_OKNESSET_BACKEND || 'http://127.0.0.1:5000/'
 
 export async function api({ method, url, data }: Params) {
 

@@ -5,8 +5,11 @@ import './App.css'
 import { useQuery } from 'react-query'
 import axios from 'axios'
 import Member from './Member';
+
+const backend = import.meta.env.VITE_OKNESSET_BACKEND || 'http://127.0.0.1:5000'
+
 const fetchMembers = () => {
-    return axios.get('http://127.0.0.1:5000/members')
+    return axios.get(`${backend}/members`)
 }
 
 function App() {

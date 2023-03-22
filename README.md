@@ -1,7 +1,8 @@
 # open-knesset-frontend
 
-# The Public Knowledge Workshop
+### Local Development
 
-# npm install
-
-# npm run dev
+```
+yarn install
+yarn run dev
+```
